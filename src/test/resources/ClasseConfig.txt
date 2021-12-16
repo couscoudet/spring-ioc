@@ -1,0 +1,2 @@
+eu.esic.formation.spring.ioc.dao.impl.DaoImpl
+eu.esic.formation.spring.ioc.metier.impl.MetierImpl

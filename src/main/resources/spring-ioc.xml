@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd 	
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	
+			
+		<bean id="daoBean" class="eu.esic.formation.spring.ioc.dao.impl.DaoImpl"></bean>
+		
+		<bean id="metierBean" class="eu.esic.formation.spring.ioc.metier.impl.MetierImpl">
+			<property name="dao" ref="daoBean"></property>
+		</bean>
+		
+		<!-- TODO : Declaration du Bean Commercial-->
+		
+		<!--TODO : Declaration du Bean Developpeur-->
+		
+</beans>
