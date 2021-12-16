@@ -1,3 +1,3 @@
-# Spring Ioc
+# spring-ioc
 
 spring-ioc
