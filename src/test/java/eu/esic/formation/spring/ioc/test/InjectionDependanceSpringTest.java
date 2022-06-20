@@ -37,9 +37,9 @@ public class InjectionDependanceSpringTest {
             String daoClassname = scanner.next();
             String metierClassName = scanner.next();
             Class<?> cdao = Class.forName(daoClassname);
-            IDao dao = (IDao) cdao.newInstance();
+            IDao dao = (IDao) cdao.getDeclaredConstructor().newInstance();
             Class<?> cmetier = Class.forName(metierClassName);
-            IMetier metier = (IMetier) cmetier.newInstance();
+            IMetier metier = (IMetier) cmetier.getDeclaredConstructor().newInstance();
             Method meth = cmetier.getMethod("setDao", new Class[] { IDao.class });
             meth.invoke(metier, new Object[] { dao });
             double nbCalcule = metier.calcul();

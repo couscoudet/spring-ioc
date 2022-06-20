@@ -4,6 +4,15 @@
 	<artifactId>spring-ioc</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<name>Tester l'ioc par Spring</name>
+	<properties>
+		<java.version>11</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<spring-testdbunit.version>1.3.0</spring-testdbunit.version>
+		<org.dbunit.version>2.5.4</org.dbunit.version>
+		<com.github.jmnarloch.version>1.0.1</com.github.jmnarloch.version>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -21,15 +30,4 @@
 			<version>3.0.7.RELEASE</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<release>11</release>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
