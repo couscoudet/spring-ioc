@@ -26,7 +26,7 @@ public class InjectionDependanceSpringTest {
         MetierImpl metier = new MetierImpl();
         metier.setDao(dao);
         double nbCalcule = metier.calcul();
-        Assert.assertTrue(nbCalcule == 5000);
+        Assert.assertTrue(nbCalcule == 30000);
         System.out.println(metier.calcul());
     }
 
@@ -43,7 +43,7 @@ public class InjectionDependanceSpringTest {
             Method meth = cmetier.getMethod("setDao", new Class[] { IDao.class });
             meth.invoke(metier, new Object[] { dao });
             double nbCalcule = metier.calcul();
-            Assert.assertTrue(nbCalcule == 5000);
+            Assert.assertTrue(nbCalcule == 30000);
             System.out.println(nbCalcule);
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,7 +55,7 @@ public class InjectionDependanceSpringTest {
         ClassPathXmlApplicationContext contextSpring = new ClassPathXmlApplicationContext(new String[] { "spring-ioc.xml" });
         IMetier metier = (IMetier) contextSpring.getBean("metierBean");
         double nbCalcule = metier.calcul();
-        Assert.assertTrue(nbCalcule == 5000);
+        Assert.assertTrue(nbCalcule == 30000);
         System.out.println(nbCalcule);
         contextSpring.close();
     }
@@ -66,7 +66,7 @@ public class InjectionDependanceSpringTest {
          * TODO : Completer le code ci dessous en : 
          * 1-Recuperant le contexte Spring 
          * 2-Recuperant les beans metiers declares dans le fichier de configuration "spring-ioc.xml"
-         * 3-Assurez vous que les salaires annuels du Developpeur et Commercial sont diff�rents
+         * 3-Assurez vous que les salaires annuels du Developpeur et Commercial sont differents
          */
     }
 }
