@@ -68,5 +68,6 @@ public class InjectionDependanceSpringTest {
          * 2-Recuperant les beans metiers declares dans le fichier de configuration "spring-ioc.xml"
          * 3-Assurez vous que les salaires annuels du Developpeur et Commercial sont differents
          */
+    	Assert.assertTrue(Boolean.FALSE);
     }
 }
