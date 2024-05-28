@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * 
- * @author Christophe.ZOME@i-carre.net
+ * @author Christophe.ZOME@indyli-services.com
  * 
  */
 public class InjectionDependanceSpringTest {
@@ -64,9 +64,9 @@ public class InjectionDependanceSpringTest {
     public void testCalculSalaireAnnuel() {
         /**
          * TODO : Completer le code ci dessous en : 
-         * 1-Recuperant le contexte Spring 
-         * 2-Recuperant les beans metiers declares dans le fichier de configuration "spring-ioc.xml"
-         * 3-Assurez vous que les salaires annuels du Developpeur et Commercial sont differents
+         * TODO Q4.1 -Recuperant le contexte Spring 
+         * TODO Q4.2 -Recuperant les beans metiers declares dans le fichier de configuration "spring-ioc.xml"
+         * TODO Q4.3 -Assurez vous que les salaires annuels du Developpeur et Commercial sont differents
          */
     	Assert.assertTrue(Boolean.FALSE);
     }
